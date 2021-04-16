@@ -1,0 +1,15 @@
+<div style="margin-top: 40px ;">
+    <h2>Filter Products</h2>
+    <div class="form-group">
+        <label for="">Choose Category</label>
+        <div>
+            <select (change)="onCategoryChanged()" [(ngModel)]="selectedCategoryName" class="form-control">
+                <option value="All">All[{{allCount}}]</option>
+                <option value="Electronics">Electronics[{{electronicsCount}}]</option>
+                <option value="Fashion">Fashion[{{fashionCount}}]</option>
+                <option value="Footwear">Footwear[{{footwearCount}}]</option>
+                
+            </select>
+        </div>
+    </div>
+</div>
